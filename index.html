@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Шапка сайту -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-container container">
         <nav class="nav">
           <a class="nav-logo link" href="./index.html"
@@ -54,8 +54,14 @@
             </li>
           </ul>
         </address>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="burger-btn" width="32" height="22">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <!-- Основний контент сайту -->
     <main>
       <!-- Hero section -->
@@ -129,7 +135,8 @@
             <li class="works-list-item">
               <img
                 class="works-list-img"
-                src="./images/OurServices/img1.jpg"
+                srcset="./images/OurServices/img1@1x.jpg 1x, ./images/OurServices/img1@2x.jpg 2x"
+                src="./images/OurServices/img1@1x.jpg"
                 alt="Desctop app"
                 width="360"
                 height="300"
@@ -138,7 +145,8 @@
             <li class="works-list-item">
               <img
                 class="works-list-img"
-                src="./images/OurServices/img2.jpg"
+                srcset="./images/OurServices/img2@1x.jpg 1x, ./images/OurServices/img2@2x.jpg 2x"
+                src="./images/OurServices/img2@1x.jpg"
                 alt="Mobile app"
                 width="360"
                 height="300"
@@ -147,7 +155,8 @@
             <li class="works-list-item">
               <img
                 class="works-list-img"
-                src="./images/OurServices/img3.jpg"
+                srcset="./images/OurServices/img3@1x.jpg 1x, ./images/OurServices/img3@2x.jpg 2x"
+                src="./images/OurServices/img3@1x.jpg"
                 alt="web-site"
                 width="360"
                 height="300"
@@ -164,7 +173,8 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                src="./images/Team/img-1.jpg"
+                srcset="./images/team/img1@1x.jpg 1x, ./images/team/img1@2x.jpg 2x"
+                src="./images/team/img1@1x.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -231,7 +241,8 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                src="./images/Team/img-2.jpg"
+                srcset="./images/team/img2@1x.jpg 1x, ./images/team/img2@2x.jpg 2x"
+                src="./images/team/img2@1x.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -298,7 +309,8 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                src="./images/Team/img-3.jpg"
+                srcset="./images/team/img3@1x.jpg 1x, ./images/team/img3@2x.jpg 2x"
+                src="./images/team/img3@1x.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -365,7 +377,8 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                src="./images/Team/img-4.jpg"
+                srcset="./images/team/img4@1x.jpg 1x, ./images/team/img4@2x.jpg 2x"
+                src="./images/team/img4@1x.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -611,7 +624,7 @@
       </div>
     </footer>
     <!-- Modal window -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -701,12 +714,106 @@
           <button class="modal-form-btn hero-section-btn" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close-btn menu-toggle js-close-menu">
+        <svg class="menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#modal-close-icon"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-items">
+          <a href="./index.html" class="mobile-menu-link link active">Studio</a>
+        </li>
+        <li class="mobile-menu-items">
+          <a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-items">
+          <a href="./index.html" class="mobile-menu-link link">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-items">
+          <a href="tel:+110001111111" class="mobile-contacts-link link email">
+            +11 (000) 111-11-11
+          </a>
+        </li>
+        <li class="mobile-contacts-items">
+          <a href="mailto:info@devstudio.com" class="mobile-contacts-link link tel">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-socials footer-socials-list list">
+        <li class="footer-socials-list-item">
+          <a
+            class="footer-socials-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram icon"
+          >
+            <svg class="footer-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials-list-item">
+          <a
+            class="footer-socials-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter icon"
+          >
+            <svg class="footer-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials-list-item">
+          <a
+            class="footer-socials-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook icon"
+          >
+            <svg class="footer-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials-list-item">
+          <a
+            class="footer-socials-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Linkedin icon"
+          >
+            <svg class="footer-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <!-- Mask from modal -->
-    <!-- <script src="./js/inputmask.min.js"></script>
-    <script src="./js/form.js"></script> -->
+    <script src="./js/inputmask.min.js"></script>
+    <script src="./js/form.js"></script>
     <!-- Script -->
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <!-- Mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -50,7 +50,7 @@
 */
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -135,7 +135,7 @@ body {
     min-width: 320px;
     max-width: 428px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 15px;
 
     outline: 2px solid red;
 }
@@ -172,44 +172,25 @@ body {
   |============================
 */
 .header {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
     background: #FFFFFF;
-    /* Модуль №3 - Блокова бодель. Flexbox */
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
     border-bottom: 1px solid var(--color-cornflower);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
 }
 
 .header-container {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
-    /* Модуль №3 - Блокова бодель. Flexbox */
     display: flex;
     align-items: center;
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
 }
 
 .nav {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
-    /* Модуль №3 - Блокова бодель. Flexbox */
     display: flex;
     margin-right: auto;
     align-items: center;
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
 }
 
 .nav-logo {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
     font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
@@ -217,64 +198,45 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-iris);
-    /* Модуль №3 - Блокова бодель. Flexbox */
-    margin-right: 76px;
+    margin-right: 120px;
     display: flex;
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
-    /* color */
-    /* flex-box */
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
+@media only screen and (min-width: 1158px) {
+    .nav-logo {
+        margin-right: 76px;
+    }
 }
 
 .nav-logo-desc {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
     color: var(--color-navy-blue);
-    /* Модуль №3 - Блокова бодель. Flexbox */
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
 }
 
 .nav-list {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
-    /* Модуль №3 - Блокова бодель. Flexbox */
-    display: flex;
+    display: none;
     gap: 40px;
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
 }
 
-.nav-list-item {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
-    /* Модуль №3 - Блокова бодель. Flexbox */
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
+@media only screen and (min-width: 768px) {
+    .nav-list {
+        display: flex;
+    }
 }
+
+.nav-list-item {}
 
 .nav-list-item-link {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
     color: var(--color-navy-blue);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    /* Модуль №3 - Блокова бодель. Flexbox */
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
     position: relative;
     transition: color var(--anim-medium);
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
 }
 
 .nav-list-item-link.active {
@@ -326,48 +288,51 @@ body {
 }
 
 .address {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
+    display: none;
     font-style: normal;
-    /* Модуль №3 - Блокова бодель. Flexbox */
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
+}
+
+@media only screen and (min-width: 768px) {
+    .address {
+        display: block;
+    }
 }
 
 .address-list {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
-    /* Модуль №3 - Блокова бодель. Flexbox */
     display: flex;
-    gap: 40px;
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
+    column-gap: 40px;
+    row-gap: 12px;
+    flex-direction: column;
 }
 
-.address-list-item {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
-    /* Модуль №3 - Блокова бодель. Flexbox */
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
+@media only screen and (min-width: 1158px) {
+    .address-list {
+        display: flex;
+        flex-direction: row;
+    }
 }
+
+.address-list-item {}
 
 .address-list-item-link {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
     color: var(--color-slate);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    /* Модуль №3 - Блокова бодель. Flexbox */
-    padding-top: 24px;
-    padding-bottom: 24px;
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    padding: 0;
     transition: color var(--anim-medium);
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
+}
+
+@media only screen and (min-width: 1158px) {
+    .address-list-item-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 
 .address-list-item-link:hover,
@@ -381,6 +346,8 @@ body {
     /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
 }
 
+.burger-btn {}
+
 /**
   |============================
   | HERO SECTION
@@ -388,18 +355,65 @@ body {
 */
 
 .hero-section {
+    max-width: 1440px;
     background-color: var(--color-navy-blue);
     padding-top: 112px;
     padding-bottom: 112px;
     max-width: 428px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-        url(../images/hero/hero-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/hero/hero-background_mob@1x.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero/hero-background_mob@2x.jpg);
+    }
+}
+
+@media only screen and (min-width: 429px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero/hero-background_tab@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero/hero-background_tab@2x.jpg);
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero/hero-background_deck@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero/hero-background_deck@2x.jpg);
+        }
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -436,7 +450,6 @@ body {
     .hero-section-title {
         font-size: 56px;
         line-height: 1.07;
-        letter-spacing: 0.02em;
         max-width: 496px;
         margin-bottom: 36px;
     }
@@ -664,13 +677,13 @@ body {
 }
 
 .team-container {
-    min-width: 296px;
-    max-width: 296px;
+    min-width: 294px;
+    max-width: 294px;
 }
 
 @media only screen and (min-width: 768px) {
     .team-container {
-        max-width: 584px;
+        max-width: 582px;
     }
 }
 
@@ -697,6 +710,12 @@ body {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+    .team-list {
+        row-gap: 64px;
+    }
 }
 
 .team-list-item {
@@ -906,26 +925,14 @@ body {
 
 .customers-link:hover,
 .customers-link:focus {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
     color: var(--color-ocean);
-    /* Модуль №3 - Блокова бодель. Flexbox */
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
     border: 1px solid transparent;
     border-color: var(--color-ocean);
     border-radius: 4px;
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
 }
 
 .customer-icon {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
-    /* Модуль №3 - Блокова бодель. Flexbox */
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
     fill: currentColor;
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
 }
 
 
@@ -974,6 +981,13 @@ body {
 
 .footer-wrapper {
     margin: 0;
+    max-width: 268px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-wrapper {
+        max-width: 264px;
+    }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -1019,13 +1033,7 @@ body {
 }
 
 .footer-link-desc {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
     color: var(--color-cloud);
-    /* Модуль №3 - Блокова бодель. Flexbox */
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
 }
 
 .footer-social {
@@ -1066,41 +1074,146 @@ body {
 .footer-socials-list-item {}
 
 .footer-socials-link {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
     background-color: var(--color-iris);
-    /* Модуль №3 - Блокова бодель. Flexbox */
     display: flex;
     width: 40px;
     height: 40px;
     justify-content: center;
     align-items: center;
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
     border-radius: 50%;
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
     transition: background-color var(--anim-medium);
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
 }
 
 .footer-socials-link:hover,
 .footer-socials-link:focus {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
     background-color: var(--color-green);
-    /* Модуль №3 - Блокова бодель. Flexbox */
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
 }
 
 .footer-socials-icon {
-    /* Модуль №2 - Селектори та колір. Текст та шрифти */
-    /* Модуль №3 - Блокова бодель. Flexbox */
-    /* Модуль №4 - Декоративні ефекти та елементи. Векторна графіка */
     fill: var(--color-cloud);
-    /* Модуль №5 - Позиціоновані елементи. Переходи та анімація */
-    /* Модуль №6 - Елементи та валідація форм */
-    /* Модуль №7 - Адаптивна верстка. Адаптивна графіка */
+}
+
+/* Footer forms */
+.footer-form-wrapper {
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-form-wrapper {
+        margin-left: 0;
+    }
+}
+
+.footer-form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-light);
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-form-title {
+        text-align: left;
+    }
+}
+
+.footer-form {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-form {
+        column-gap: 24px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+.footer-form-field {
+    width: 398px;
+    height: 40px;
+    position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-form-field {
+        width: 264px;
+    }
+}
+
+.footer-form-input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid var(--color-light);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: transparent;
+    color: var(--color-light);
+    padding: 0;
+    padding-left: 16px;
+}
+
+.footer-form-tag {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--color-light);
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    transform-origin: left center;
+    transition: transform var(--anim-medium);
+    background-color: var(--color-navy-blue);
+    padding: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.footer-form-input:focus+.footer-form-tag,
+.footer-form-input:not(:placeholder-shown)+.footer-form-tag {
+    transform: translateY(-134%);
+}
+
+.footer-form-btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    width: 165px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--color-light);
+    background-color: var(--color-iris);
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: none;
+    transition: background-color var(--anim-medium);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    background-color: var(--color-ocean);
+}
+
+.footer-form-btn-icon {
+    fill: var(--color-light);
 }
 
 
@@ -1461,129 +1574,6 @@ body {
   |============================
 */
 
-/* Footer forms */
-.footer-form-wrapper {
-    margin: 0 auto;
-}
-
-@media only screen and (min-width: 768px) {
-    .footer-form-wrapper {
-        margin-left: 0;
-    }
-}
-
-.footer-form-title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--color-light);
-    margin-bottom: 16px;
-    text-align: center;
-}
-
-@media only screen and (min-width: 768px) {
-    .footer-form-title {
-        text-align: left;
-    }
-}
-
-.footer-form {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 16px;
-    align-items: center;
-    justify-content: center;
-}
-
-@media only screen and (min-width: 768px) {
-    .footer-form {
-        column-gap: 24px;
-        align-items: center;
-        justify-content: flex-start;
-    }
-}
-
-.footer-form-field {
-    width: 398px;
-    height: 40px;
-    position: relative;
-}
-
-@media only screen and (min-width: 768px) {
-    .footer-form-field {
-        width: 264px;
-    }
-}
-
-.footer-form-input {
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    border: 1px solid var(--color-light);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    outline: transparent;
-    color: var(--color-light);
-    padding: 0;
-    padding-left: 16px;
-}
-
-.footer-form-tag {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-    color: var(--color-light);
-    position: absolute;
-    top: 50%;
-    left: 14px;
-    transform: translateY(-50%);
-    transform-origin: left center;
-    transition: transform var(--anim-medium);
-    background-color: var(--color-navy-blue);
-    padding: 0;
-    padding-left: 2px;
-    padding-right: 2px;
-}
-
-.footer-form-input:focus+.footer-form-tag,
-.footer-form-input:not(:placeholder-shown)+.footer-form-tag {
-    transform: translateY(-134%);
-}
-
-.footer-form-btn {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 16px;
-    width: 165px;
-    height: 40px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--color-light);
-    background-color: var(--color-iris);
-    border-radius: 4px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 24px;
-    padding-right: 24px;
-    border: none;
-    transition: background-color var(--anim-medium);
-}
-
-.footer-form-btn:hover,
-.footer-form-btn:focus {
-    background-color: var(--color-ocean);
-}
-
-.footer-form-btn-icon {
-    fill: var(--color-light);
-}
-
 /* Modal form */
 
 .modal-form {}
@@ -1730,6 +1720,138 @@ body {
     color: var(--color-iris);
 }
 
-.valid-phone {}
 
-.valid-field {}
+/**
+  |============================
+  | Mobile menu burger
+  |============================
+*/
+
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-close-btn.menu-toggle {
+    background-color: var(--color-cornflower);
+    opacity: 0.1;
+    border: 1px solid var(--color-navy-blue);
+    min-height: 24px;
+    min-width: 24px;
+}
+
+.menu-close-icon {
+    fill: currentColor;
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 35px;
+    background-color: var(--color-light);
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    color: var(--color-navy-blue);
+}
+
+.mobile-menu {
+    padding: 0;
+    margin: 0;
+    margin-bottom: auto;
+    list-style: none;
+}
+
+.mobile-menu-items:nth-last-child(n+2) {
+    margin-bottom: 40px;
+}
+
+.mobile-menu-link {}
+
+.mobile-menu .link {
+    display: block;
+    padding: 0;
+    color: var(--color-navy-blue);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+
+.mobile-menu .active {
+    color: var(--color-ocean);
+}
+
+.mobile-contacts {
+    margin-bottom: 48px;
+}
+
+.mobile-contacts-items:nth-last-child(2) {
+    margin-bottom: 40px;
+}
+
+.email {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--color-iris);
+}
+
+.tel {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-slate);
+}
+
+.mobile-socials {
+    justify-content: flex-start;
+    gap: 56px;
+}
